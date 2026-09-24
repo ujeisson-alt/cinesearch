@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Necesario para que React Router funcione al recargar /pelicula/:id, /favoritos, etc.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
