@@ -4,7 +4,7 @@
 
 ![CineSearch](public/og-image.png)
 
-**🔗 Demo:** _agregá acá tu URL de Netlify_ · **📐 Planificación y wireframes:** [docs/PLANIFICACION.md](docs/PLANIFICACION.md)
+**🔗 Demo:** [cinesearch-jeisson.netlify.app](https://cinesearch-jeisson.netlify.app) · **📐 Planificación y wireframes:** [docs/PLANIFICACION.md](docs/PLANIFICACION.md)
 
 ## ✨ Funcionalidades
 
