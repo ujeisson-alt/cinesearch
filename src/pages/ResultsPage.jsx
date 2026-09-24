@@ -29,6 +29,8 @@ export default function ResultsPage() {
   const clearFilters = () => updateParams({ genero: '', anio: '', rating: '' })
 
   const label = type === 'tv' ? 'series' : 'películas'
+  const countLabel = (n) =>
+    n === 1 ? `1 ${type === 'tv' ? 'serie encontrada' : 'película encontrada'}` : `${n.toLocaleString('es-AR')} ${label} encontradas`
   const title = query ? <>Resultados para <span className="text-gradient">“{query}”</span></> : `Explorar ${label}`
 
   return (
@@ -41,7 +43,7 @@ export default function ResultsPage() {
           <p className="page__subtitle">
             {query && (genre || minRating)
               ? `${data.results.length} coincidencias en esta página (de ${data.totalResults.toLocaleString('es-AR')} resultados)`
-              : `${data.totalResults.toLocaleString('es-AR')} ${label} encontradas`}
+              : countLabel(data.totalResults)}
           </p>
         )}
       </header>
